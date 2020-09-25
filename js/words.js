@@ -27,7 +27,10 @@ var THESAURUS = {
     "all",
     "NIL",
     "int",
-    "Url"
+    "Url",
+    "[]",
+    "{}",
+    "()"
   ],
   small: [
     "next",

@@ -473,12 +473,17 @@ class Game {
     if (!this.cur || !this.bubbles[this.cur] || createjs.Ticker.getPaused())
       return;
 
-    var c = String.fromCharCode(e.keyCode).toUpperCase(),
+    var c = e.key,
       p = this.bubbles[this.cur].pointer;
 
     if (!this.bubbles[this.cur][p]) {
       return;
     }
+    console.log(
+      "THIS.BUBBLES[THIS.CUR][P].CHAR",
+      this.bubbles[this.cur][p].char
+    );
+    console.log("C", c);
     if (this.bubbles[this.cur][p].char == c) {
       // correct keypress
       this.bubbles[this.cur][p].speed = 30;
