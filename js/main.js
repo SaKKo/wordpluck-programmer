@@ -473,7 +473,7 @@ class Game {
     if (!this.cur || !this.bubbles[this.cur] || createjs.Ticker.getPaused())
       return;
 
-    var c = String.fromCharCode(e.keyCode),
+    var c = String.fromCharCode(e.keyCode).toUpperCase(),
       p = this.bubbles[this.cur].pointer;
 
     if (!this.bubbles[this.cur][p]) {
